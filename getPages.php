@@ -1,12 +1,6 @@
 <?php
 
-require_once 'vendor/autoload.php';
-session_start();
-$fb = new Facebook\Facebook([
-  'app_id' => '189709076553116',
-  'app_secret' => 'c8f24410dc38a03072c42f005e055c09',
-  'default_graph_version' => 'v9.0',
-]);
+include('fb_config.php');
 
 $accessToken = $_SESSION['facebook_access_token'];
 
